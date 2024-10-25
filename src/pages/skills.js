@@ -26,7 +26,7 @@ function Skills() {
                     <div className="skill-item text-center">
                         <div className="relative w-36 h-36 rounded-full skill-circle flex items-center justify-center mx-auto mb-4">
                             <div className="w-full h-full rounded-full skill-percentage flex items-center justify-center text-white text-xl font-bold">
-                                80%
+                                75%
                             </div>
                         </div>
                         <p className="skill-name">React & Tailwind</p>
@@ -36,7 +36,7 @@ function Skills() {
                     <div className="skill-item text-center">
                         <div className="relative w-36 h-36 rounded-full skill-circle flex items-center justify-center mx-auto mb-4">
                             <div className="w-full h-full rounded-full skill-percentage flex items-center justify-center text-white text-xl font-bold">
-                                75%
+                                80%
                             </div>
                         </div>
                         <p className="skill-name">JavaScript</p>
@@ -49,7 +49,7 @@ function Skills() {
                                 60%
                             </div>
                         </div>
-                        <p className="skill-name">Node</p>
+                        <p className="skill-name">NodeJs & Express</p>
                     </div>
                 </div>
             </section>
