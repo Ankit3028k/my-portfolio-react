@@ -1,13 +1,316 @@
-body {
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "roboto","helvetica neue";
+}
+.contained1{
+  background: rgb(30,30,30);
+background: linear-gradient(90deg, rgba(176,155,33,1) 50%, rgba(30,30,30,1) 50% ) !important;
+height: 100vh;
+width: 100vw;
+}
+/* About Section */
+#about-us {
+  background-color: #1a1a1a; /* Dark background for contrast */
+  color: #f0f0f0; /* Light text for readability */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.about-in-container {
+  max-width: 1200px; /* Restricting width for better layout */
+  margin: 0 auto; /* Centering */
+  padding: 20px; /* Adding padding */
+}
+
+h2 {
+  font-size: 48px; /* Larger font size for headings */
+  margin-bottom: 20px;
+}
+
+.image-frame {
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+.image-frame img {
+  transition: transform 0.3s; /* Image zoom on hover */
+}
+
+.image-frame img:hover {
+  transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+.about-detail {
+  line-height: 1.6; /* Improved line height for readability */
+}
+
+.about-detail h3 {
+  color: #ffd700; /* Gold color for highlights */
+}
+
+.about-detail ul {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove padding */
+}
+
+.about-detail ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.about-detail a {
+  color: #ffd700; /* Same gold for links */
+}
+
+.about-detail a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-width: 768px) {
+  .img-text {
+      flex-direction: column; /* Stack image and text on smaller screens */
+  }
+
+  .image-frame {
+      width: 100%; /* Full width on small screens */
+      height: auto; /* Automatic height */
+  }
+}
+/* Education Section */
+#education {
+  background-color: #1e1e1e; /* Dark background for contrast */
+  color: #f0f0f0; /* Light text for readability */
+}
+
+.education-container {
+  max-width: 1200px; /* Restricting width for better layout */
+  margin: 0 auto; /* Centering */
+  padding: 20px; /* Adding padding */
+}
+
+h2 {
+  font-size: 48px; /* Larger font size for headings */
+  margin-bottom: 20px;
+}
+
+.timeline-item {
+  position: relative; /* For the pseudo-element */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+.timeline-date {
+  background-color: #3a3a3a; /* Slightly lighter gray for date background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding for the date */
+}
+
+.timeline-content {
+  padding: 20px; /* Increased padding for content */
+}
+
+.timeline-content h3 {
+  color: #ffd700; /* Gold color for highlights */
+}
+
+.timeline-content h4 {
+  color: #e0e0e0; /* Slightly lighter gray for subheadings */
+}
+
+.timeline-content p {
+  color: #b0b0b0; /* Light gray for regular text */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid {
+      grid-template-columns: 1fr; /* Stack items on smaller screens */
+  }
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #1a1a1a; /* Dark background for contrast */
+    padding: 50px 0; /* Added padding for spacing */
+}
+
+.skills-container {
+    max-width: 1200px; /* Restricting width for better layout */
+    margin: 0 auto; /* Centering */
+}
+
+h2 {
+    font-size: 48px; /* Larger font size for headings */
+}
+
+.skill-item {
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.skill-item:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+.skill-circle {
+    background-color: #2a2a2a; /* Darker gray for skill circle */
+    border: 8px solid #ffd700; /* Gold border for emphasis */
+}
+
+.skill-percentage {
+    background-color: #1a1a1a; /* Dark background for inner circle */
+    color: #ffffff; /* White text for contrast */
+}
+
+.skill-name {
+    color: #ffd700; /* Gold color for skill names */
+    font-weight: bold; /* Bold font for emphasis */
+    margin-top: 10px; /* Space between circle and text */
+}
+/* Services Section */
+.container2 {
+  background-color: #121212; /* Darker background for a sleek look */
+  padding: 50px 0; /* Consistent padding */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.text-center {
+  text-align: center; /* Center text alignment */
+  width: 100%; /* Full width for the container */
+}
+
+/* Heading styles */
+.services-head {
+  font-size: 48px; /* Increase heading size for prominence */
+  color: #ffcc00; /* Bright gold color for the heading */
+  margin-bottom: 30px; /* Space below heading */
+  text-transform: uppercase; /* Uppercase letters for emphasis */
+  letter-spacing: 2px; /* Increased letter spacing for elegance */
+}
+
+/* Individual service card styling */
+.card_data {
+  background-color: #1a1a1a; /* Slightly lighter dark background for cards */
+  border-radius: 12px; /* More pronounced rounded corners */
+  padding: 30px; /* More padding for card content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  text-align: center; /* Center-aligned text */
+  position: relative; /* Positioning for hover effects */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Shadow effect */
+}
+
+/* Card hover effects */
+.card_data:hover {
+  transform: translateY(-8px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8); /* Enhanced shadow on hover */
+}
+
+/* Service icon styling */
+.service_icon {
+  font-size: 60px; /* Larger icon size for better visibility */
+  color: #ffcc00; /* Bright gold for icons */
+  margin-bottom: 15px; /* Space below icons */
+  transition: color 0.3s ease; /* Transition for icon color */
+}
+
+/* Change icon color on hover */
+.card_data:hover .service_icon {
+  color: #ffffff; /* Change icon color on hover */
+}
+
+/* Service name styling */
+.card_name {
+  font-size: 26px; /* Increased font size for service names */
+  color: #ffffff; /* White text for service names */
+  margin-bottom: 10px; /* Space below service names */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Card description styling */
+.card_description {
+  font-size: 18px; /* Slightly larger font size for descriptions */
+  color: #dddddd; /* Light gray for descriptions */
+  line-height: 1.6; /* Increased line height for readability */
+  margin: 0; /* Remove default margin */
+}
+
+/* Swiper Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffcc00; /* Bright gold for navigation arrows */
+}
+
+.swiper-pagination-bullet {
+  background: #ffcc00; /* Gold for pagination bullets */
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff; /* White for active pagination bullet */
+}
+
+
+/* my project */
+.project-container {
+  max-width: 1200px; /* Set max width */
+  width: 100%; /* Make it responsive */
+  padding: 0 20px; /* Add padding for mobile */
+}
+
+.project {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #141414;
+}
+
+.gallery {
+  --g: 6px; /* the gap */
+  margin-top: 8%;
+}
+
+.gallery img {
+  /* Remove fixed height */
+  object-fit: cover;
+  filter: grayscale();
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Custom styles for specific images */
+.gallery img:nth-child(2) {
+  grid-area: 1 / 2 / span 2 / span 2;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, calc(50% + var(--g) / 4) 100%, 0 calc(50% - var(--g) / 4));
+}
+
+.gallery img:nth-child(3) {
+  grid-area: 2 / 1 / span 2 / span 2;
+  clip-path: polygon(0 0, calc(50% - var(--g) / 4) 0, 100% calc(50% + var(--g) / 4), 100% 100%, 0 100%);
+}
+
+.contact-details {
+  margin-left: 30px;
+  text-align: left;
+  display: flex; /* Align items horizontally */
+  flex-direction: row; /* Set the direction to row */
+  justify-content: center; /* Center items */
+  flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+}
+
+.contact-details span {
+  margin: 0 15px; /* Add margin for spacing */
+  display: flex; /* Ensure icon and text are aligned */
+  align-items: center; /* Center icon vertically with text */
+  color: #f1f1f1; /* Updated text color */
+}
+
+.contact-details i {
+  margin-right: 5px; /* Space between icon and text */
 }
