@@ -19,7 +19,7 @@ function Skills() {
                                 95%
                             </div>
                         </div>
-                        <p className="skill-name">HTML & CSS</p>
+                        <p className="skill-name">HTML,CSS & Bootstrap</p>
                     </div>
 
                     {/* Skill Item */}
@@ -29,7 +29,7 @@ function Skills() {
                                 80%
                             </div>
                         </div>
-                        <p className="skill-name">Bootstrap</p>
+                        <p className="skill-name">React & Tailwind</p>
                     </div>
 
                     {/* Skill Item */}
@@ -49,7 +49,7 @@ function Skills() {
                                 60%
                             </div>
                         </div>
-                        <p className="skill-name">Photoshop</p>
+                        <p className="skill-name">Node</p>
                     </div>
                 </div>
             </section>
