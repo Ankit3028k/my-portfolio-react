@@ -9,7 +9,7 @@ import Experience from './pages/experience';
 import MyProjects from './pages/myProjects'
 // import Contact from './pages/contact'
 import Footer from './components/footer';
-
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
