@@ -2,25 +2,20 @@ import React from 'react';
 
 function Home() {
     const handleDownload = () => {
-        // Example URL to the file you want to download (replace with your actual file URL)
-        const fileUrl = 'https://www.canva.com/design/DAGUenhbgAM/qeWGv3r44PHYV8aNCqYXiQ/view?utm_content=DAGUenhbgAM&utm_campaign=designshare&utm_medium=link&utm_source=editor';
-
-        // Creating a temporary anchor element to initiate the download
+        const fileUrl = '/screencapture-builder-zety-resume-final-resume-2025-03-20-12_39_45.pdf';
+        // Replace with actual file path
         const anchor = document.createElement('a');
         anchor.href = fileUrl;
-        anchor.target='_blank';
-        anchor.download = 'resume.pdf'; // Specify the file name here
+        anchor.download = 'Ankit_Gangrade_Resume.pdf';
         anchor.click();
-
-        // Clean up anchor element
         anchor.remove();
-    };
+      };
 
     return (
-        <div className="contained1 h-screen w-full bg-gradient-to-r from-yellow-600 to-gray-900">
+        <div className="contained1 h-screen w-full bg-gradient-to-r from-[#007bff] to-[#2e2e2e]">
             <div className="bg-text relative bg-black bg-opacity-60 text-white font-bold border-4 border-gray-300 p-5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-11/12 sm:w-3/5 lg:w-1/3 h-3/5">
                 <div className="bg-in mx-auto mt-4 lg:mt-10 w-4/5 md:w-3/4">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-none">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-none">
                         I'm <br />
                         <span className="text-yellow-400 font-extrabold uppercase">Ankit</span> <span className="font-extrabold uppercase">Gangrade</span>
                     </h1>

@@ -2,6 +2,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "roboto","helvetica neue";
 }
 .contained1{
@@ -273,7 +274,7 @@ h2 {
 
 .gallery {
   --g: 6px; /* the gap */
-  margin-top: 8%;
+  /* margin-top: 8%; */
 }
 
 .gallery img {
