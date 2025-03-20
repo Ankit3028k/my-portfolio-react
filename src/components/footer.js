@@ -33,7 +33,8 @@ function Footer() {
   };
 
   return (
-    <footer className="contact-section bg-gray-900 text-white mt-14 py-12">
+<footer className="contact-section bg-gray-900 text-white  md:mt-14 py-12">
+
       <div className="container mx-auto max-w-screen-lg px-4">
         <h1 className="text-4xl mb-8 text-center font-bold">Contact Me</h1>
         <div className="contact-info flex flex-col md:flex-row justify-center items-center mb-8">

@@ -23,7 +23,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="w-full bg-gray-900 flex justify-center items-center py-12">
+    <div className="w-full bg-gray-900 place-items-center  py-12">
       <div className="text-center w-full max-w-5xl px-4">
         <h2 className="text-4xl text-[#ffcc00] uppercase tracking-wider mb-10 mt-18 relative inline-block">
           My Experience
