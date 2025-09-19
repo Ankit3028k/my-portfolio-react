@@ -72,6 +72,22 @@ const ProjectDetail = () => {
       features: ["Real-Time Messaging", "Group Chat", "User Profiles"],
       additionalInfo: "This project enables users to chat in real time using WebSocket technology.",
     },
+    {
+      id: "6",
+      title: "FASTAGCAB Loyalty Program App",
+      description: "Android application for the FASTAGCAB loyalty program exclusively designed for Electricians & Retailers. The app enables more learning and better rewards for partners. Registered users earn Reward Points on every purchase of select FASTAGCAB products and can redeem them conveniently. Electricians can also earn extra referral points for introducing the app to their friends.",
+      link: "https://fastagcab.in/wp-content/uploads/2025/09/application-6dde0118-4d61-46a3-b451-38a2022a534e.apk",
+      image: "https://res.cloudinary.com/dtezcrxpw/image/upload/v1758280331/projects/WhatsApp_Image_2025-09-19_at_16.41.37_b0a838b8_lyocoo.jpg",
+      technologies: ["React Native", "Node.js", "Express", "MongoDB"],
+      features: [
+        "Loyalty Program: Earn points on purchases",
+        "Referral System: Electricians earn extra points for referrals",
+        "Reward Redemption: Redeem points from a list of options",
+        "User-Friendly: Designed for quick and easy use by electricians and retailers"
+      ],
+      additionalInfo: "The FASTAGCAB loyalty program is designed to be more user-friendly and provide a richer experience to its users. Unlike usual loyalty programs, FASTAGCAB is designed to understand and address the needs of our channel and trade associates most quickly and easily.",
+      landscape: true,
+    },
   ];
 
   const project = projects.find((p) => p.id === id);
@@ -83,7 +99,13 @@ const ProjectDetail = () => {
   return (
     <div className="project-detail container mx-auto p-4">
       {/* Project Image */}
-      {project.image && <img src={project.image} alt={project.title} className="w-full h-auto mb-4" />}
+      {project.image && (
+        <img 
+          src={project.image} 
+          alt={project.title} 
+          className={`w-full mb-4 ${project.landscape ? 'max-h-96 object-contain' : 'h-auto'}`} 
+        />
+      )}
 
       <h2 className="text-3xl text-center text-white mb-6">{project.title}</h2>
 

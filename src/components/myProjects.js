@@ -33,7 +33,13 @@ const MyProjects = () => {
       title: "Real time chat app",
       link: "https://chating-with-anyone.vercel.app/",
     },
-    
+    {
+      id: "6",
+      src: "https://res.cloudinary.com/dtezcrxpw/image/upload/v1758280331/projects/WhatsApp_Image_2025-09-19_at_16.41.37_b0a838b8_lyocoo.jpg",
+      title: "FASTAGCAB Loyalty Program App",
+      link: "https://play.google.com/store/apps/details?id=com.fastagcab.app",
+      landscape: true,
+    },
   ];
 
   // Get number of projects
@@ -66,7 +72,7 @@ const MyProjects = () => {
             >
               <img
                 src={project.src}
-                className="w-full h-40 sm:h-56 lg:h-64 object-cover filter grayscale transition duration-500 hover:grayscale-0"
+                className={`w-full ${project.landscape ? 'h-auto max-h-64 object-contain' : 'h-40 sm:h-56 lg:h-64 object-cover'} filter grayscale transition duration-500 hover:grayscale-0`}
                 alt={project.title}
               />
               <p className="text-white text-center mt-2">
