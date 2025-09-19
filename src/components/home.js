@@ -2,7 +2,8 @@ import React from 'react';
 
 function Home() {
     const handleDownload = () => {
-        const fileUrl = '/screencapture-builder-zety-resume-final-resume-2025-03-20-12_39_45.pdf';
+        // const fileUrl = '/screencapture-builder-zety-resume-final-resume-2025-03-20-12_39_45.pdf';
+        const fileUrl = '/Ankit-Gangrade(Resume).pdf';
         // Replace with actual file path
         const anchor = document.createElement('a');
         anchor.href = fileUrl;
